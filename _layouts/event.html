@@ -4,7 +4,7 @@ layout: default
 
 <div itemscope itemtype="http://schema.org/Event">
   <h3>
-    <a href='/events'>Events</a> > <time itemprop="startDate" datetime={{ page.date | date: "%Y-%m-%d" }}>{{ page.date | date: "%B %-d, %Y" }}</time>
+    <a href='events'>Events</a> > <time itemprop="startDate" datetime={{ page.date | date: "%Y-%m-%d" }}>{{ page.date | date: "%B %-d, %Y" }}</time>
   </h3>
   <h1>
     <small>#{{page.event_id}}</small>
@@ -84,8 +84,8 @@ layout: default
     <div class='slideshow'></div>
     <p>Have a photo of this event? Upload it to <a href='http://flickr.com'>Flickr</a> and tag it with <strong><a href='https://www.flickr.com/search/?tags=chihacknight{{page.event_id}}'>chihacknight{{page.event_id}}</a></strong></p>
 
-    <script src="/js/galleria/galleria.js"></script>
-    <script src="/js/galleria/plugins/flickr/galleria.flickr.js"></script>
+    <script src="js/galleria/galleria.js"></script>
+    <script src="js/galleria/plugins/flickr/galleria.flickr.js"></script>
     <script>
       var flickr = new Galleria.Flickr();
         flickr.tags('chihacknight-{{page.event_id}}, chihacknight{{page.event_id}}', function(data) {
